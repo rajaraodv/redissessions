@@ -9,12 +9,12 @@ And it shows: if we are not using Redis or external session store, the
 * Sessions won't persist when the server restarts
 * You can't scale the app because loadbalancer will be sending requests to different instances & those other instances won't know about this user/session.
 
-<img src="pics/rs_browser.png" height="300px" width="450px" />
+<img src="redissessions/pics/rs_browser.png" height="300px" width="450px" />
 
 
 The below diagram shows how the architecture of the app looks w/in Cloud Foundry.
 
-<img src="pics/redisSessionStore.png" height="300px" width="450px" />
+<img src="redissessions/pics/redisSessionStore.png" height="300px" width="450px" />
 
 
 ##Getting Started ##
