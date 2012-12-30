@@ -9,7 +9,8 @@ All this app does is to keep count of number of times the user has visited in se
 <img src="https://github.com/rajaraodv/redissessions/raw/master/pics/rs_browser.png" height="300px" width="450px" />
 </p>
 
-####The below diagram shows how the architecture of the app looks w/in Cloud Foundry.####
+## Architecture ##
+#####The below diagram shows high level architecture of the app looks like w/in Cloud Foundry.#####
 
  
 <p align='center'>
@@ -141,7 +142,8 @@ Checking redisSessions... OK
 *  Notice that the count properly increments from where we started before restart.
 
 
-#### Notes ####
+## Genral Notes ####
+* If you don't have Node.js, download it from <a href='http://nodejs.org' target='_blank'>here</a>
 * If you don't have a Cloud Foundry account, sign up for it <a href='https://my.cloudfoundry.com/signup' target='_blank'>here</a> & install `VMC` Ruby command line tool.
 * Check out Cloud Foundry getting started <a href='http://docs.cloudfoundry.com/getting-started.html' target='_blank'>here</a>
 * Install latest vmc tool by running `sudo gem install vmc ---pre`
