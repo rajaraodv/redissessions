@@ -14,7 +14,7 @@ The below diagram shows how the architecture of the app looks w/in Cloud Foundry
 <img src="https://github.com/rajaraodv/redissessions/raw/master/pics/redisSessionStore.png" height="300px" width="450px" />
 
 
-##Getting Started ##
+## Code Highlights ##
 
 To add Redis session store to your Express app, first add: `connect-redis` and `redis` modules to package.json and load it in your app.
 
@@ -56,7 +56,9 @@ And finally add RedisStore to Express's session middleware like below:
   And that's it.
 
 ## Running / Testing it on Cloud Foundry ##
-
+* Clone this app to `redisSessions` folder
+* ` cd redisSessions`
+* `npm install` & follow the below instructions to push the app to Cloud Foundry
 
 ```
 
@@ -132,6 +134,6 @@ Checking redisSessions... OK
 
 
 #### Notes ####
-* Sign up for Cloud Foundry account <a href='https://my.cloudfoundry.com/signup' target='_blank'>here</a>
+* If you don't have a Cloud Foundry account, sign up for it <a href='https://my.cloudfoundry.com/signup' target='_blank'>here</a> & install `VMC` Ruby command line tool.
 * Check out Cloud Foundry getting started <a href='http://docs.cloudfoundry.com/getting-started.html' target='_blank'>here</a>
 * Install latest vmc tool by running `sudo gem install vmc ---pre`
