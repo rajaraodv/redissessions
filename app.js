@@ -21,6 +21,8 @@ app.configure(function() {
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.cookieParser('your secret here'));
+
+  //Add RedisStore to Express's sessions middleware
   app.use(express.session({store: new RedisStore({client: redisClient})}));
 
   app.use(app.router);
