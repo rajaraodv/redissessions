@@ -1,10 +1,7 @@
 A Simple Redis + Express App showing how to use Redis as session store & run it on Cloud Foundry.
 
 The main purpose of this app is to show you how to configure Redis as session store for an Express based Node.js app.
-
-All this app does is to keep count of number of times the user has visited in session.
-
-And it shows: if we are not using Redis or external session store, the
+All this app does is to keep count of number of times the user has visited in session. And it shows that if we are not using Redis or external session store, then:
 
 * Sessions won't persist when the server restarts
 * You can't scale the app because loadbalancer will be sending requests to different instances & those other instances won't know about this user/session.
