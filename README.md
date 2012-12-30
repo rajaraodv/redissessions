@@ -5,14 +5,22 @@ All this app does is to keep count of number of times the user has visited in se
 
 * Sessions won't persist when the server restarts
 * You can't scale the app because loadbalancer will be sending requests to different instances & those other instances won't know about this user/session.
-
+<p align='center'>
 <img src="https://github.com/rajaraodv/redissessions/raw/master/pics/rs_browser.png" height="300px" width="450px" />
+</p>
 
+####The below diagram shows how the architecture of the app looks w/in Cloud Foundry.####
 
-The below diagram shows how the architecture of the app looks w/in Cloud Foundry.
-
+ 
+<p align='center'>
 <img src="https://github.com/rajaraodv/redissessions/raw/master/pics/redisSessionStore.png" height="300px" width="450px" />
+</p>
 
+1. When a user opens the app, the browser connects to Cloud Foundry & hits reverse proxy / load balancer.
+2. Request is sent to one of the many Express server instances
+3. Express server instance (say instance #1) creates a session w/ cookie name connect.sid.
+4. Express stores then stores the session information in Redis & sends the response back.
+5. Next time when the user refreshes the browser, if the request goes to server instance #2 or #3, that instance will still be able to fetch session because all of the instances are connected to Redis and so your app can easily scale.
 
 ## Code Highlights ##
 
@@ -31,8 +39,8 @@ To add Redis session store to your Express app, first add: `connect-redis` and `
   "dependencies": {
     "express": "3.x",
     "jade": "*",
-    "connect-redis": "*",  //<------
-    "redis": "*"           //<------
+    "connect-redis": "*",  // Connect/Express session store
+    "redis": "*"           // Redis module.  
   }
 }
 ```
