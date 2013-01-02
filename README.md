@@ -142,8 +142,10 @@ Checking redisSessions... OK
 *  Notice that the count properly increments from where we started before restart.
 
 
-## Genral Notes ####
+
+## General Notes ####
 * If you don't have Node.js, download it from <a href='http://nodejs.org' target='_blank'>here</a>
-* If you don't have a Cloud Foundry account, sign up for it <a href='https://my.cloudfoundry.com/signup' target='_blank'>here</a> & install `VMC` Ruby command line tool.
-* Check out Cloud Foundry getting started <a href='http://docs.cloudfoundry.com/getting-started.html' target='_blank'>here</a>
-* Install latest vmc tool by running `sudo gem install vmc ---pre`
+* If you don't have a Cloud Foundry account, sign up for it <a href='https://my.cloudfoundry.com/signup' target='_blank'>here</a>  
+* Check out Cloud Foundry getting started <a href='http://docs.cloudfoundry.com/getting-started.html' target='_blank'>here</a> & install `vmc` Ruby command line tool.
+
+* To install ***latest alpha or beta*** `vmc` tool run: `sudo gem install vmc ---pre`
