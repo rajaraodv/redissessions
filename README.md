@@ -148,4 +148,4 @@ Checking redisSessions... OK
 * If you don't have a Cloud Foundry account, sign up for it <a href='https://my.cloudfoundry.com/signup' target='_blank'>here</a>  
 * Check out Cloud Foundry getting started <a href='http://docs.cloudfoundry.com/getting-started.html' target='_blank'>here</a> & install `vmc` Ruby command line tool.
 
-* To install ***latest alpha or beta*** `vmc` tool run: `sudo gem install vmc ---pre`
+* To install ***latest alpha or beta*** `vmc` tool run: `sudo gem install vmc --pre`
